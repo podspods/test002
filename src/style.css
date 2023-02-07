@@ -1,4 +1,46 @@
-body, html {
-  margin: 0;
-  padding: 0;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #202a3b;
+}
+
+.container {
+  width: 1024px;
+  height: 1024px;
+  background-image: url(/src/img/backgroung.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: larger;
+  color: white;
+}
+
+.counter {
+  font-size: 72px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+button {
+  font-size: 36px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3498db;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
 }
