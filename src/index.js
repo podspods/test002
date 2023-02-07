@@ -3,9 +3,8 @@ console.log("Bonjour :)");
 const plus = document.querySelector('.plus')
 const moin = document.querySelector('.minus')
 const raz = document.querySelector('.reset')
+const span = document.querySelector('.counter')
 let cpt = 0
-
-
 
 function fplus(){
     return cpt += 1
@@ -25,16 +24,17 @@ plus.addEventListener('click', () => {
     console.log('plus')
     cpt = fplus()
     console.log(cpt)
+    span.innerText = cpt
   })
 moin.addEventListener('click', () => {
     console.log('minus')
     cpt = fminus(cpt)
     console.log(cpt)
+    span.innerText = cpt
   })
 raz.addEventListener('click', () => {
     console.log('reset')
     cpt = freset()
     console.log(cpt)
+    span.innerText = cpt
   })
-
-
